@@ -85,7 +85,7 @@ function EventPage() {
         <li>Balcony: ${event.ticketPrices.balcony}</li>
       </ul>
       <div style = {{ display: 'flex', justifyContent: 'center', gap: '20px'}}>
-        <Link to= "/">
+      <Link to={`/Cart/${eventName}/${eventDate}`}>
       <button 
           style = {{
             display: 'block',
@@ -103,7 +103,7 @@ function EventPage() {
         </button>
         </Link>
 
-        <Link to = "/Tickets">
+        <Link to = {`/Tickets/${eventName}/${eventDate}`}>
         <button 
           style = {{
             display: 'block',
